@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+}
+table, th, td {
+    border: 2px solid black;
+}
+table{
+    width: 200px;
+    height: 200px;
+}
+h1{
+    font-family: 'Indie Flower', cursive;
+    margin-left: -200px;
+}
+section, header{
+    width: 400px;
+    margin: 0 auto;
+}
+body{
+    background-color: #787878;
+}
+p{
+    font-family: 'Indie Flower', cursive;
+    font-size: 80px;
+    color: black;
+}
