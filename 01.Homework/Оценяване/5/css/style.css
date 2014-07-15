@@ -1,0 +1,56 @@
+
+body {
+	background:url(../img/background.png);
+	background-size: auto;
+	background-color:#000;
+	font-family:Calibri;
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: relative;
+	
+}
+.content{
+	margin-left:50px;
+}
+h1 {
+	color:#CC9933;
+	font-size:48px;
+	font-weight:bold;
+}
+ul {
+	font-size:44px;
+	color:#F3CD60;
+	font-family: Consolas;
+	font-weight: bold;
+	
+	
+}
+.inline {
+	font-size:44px;
+	color:#ffffff;
+	font-family: Calibri !important;
+	font-weight:normal !important;
+}
+.panel{
+	background-color: #1A1A1A;
+	border: 2px solid #B3B3B3;
+	opacity:0.9;
+	font-family:Consolas;
+	font-size:24px;
+	margin: 20px;
+	width: 88%;
+	
+}
+ul .noDecoration{
+	list-style-type: none;
+	color:#FBEEC9;
+	font-weight:bold;
+	font-size: 34px;
+}
+#logo{
+	
+	position:absolute;
+  right:100px;
+top:10px;
+
+}

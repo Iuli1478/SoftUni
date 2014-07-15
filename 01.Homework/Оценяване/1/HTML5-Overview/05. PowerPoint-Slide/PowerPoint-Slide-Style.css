@@ -1,0 +1,38 @@
+body {
+	background: url(images/background.jpg);
+	background-repeat: no-repeat;
+	background-position: auto;
+	color: #ffffff;
+	font-family: calibri;
+	font-size: 27px;
+	padding: 5px 25px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+	font-size: 30px;
+    background-image: url(images/square.png);
+    background-repeat: no-repeat;
+    background-position: 0px 15px; 
+    padding-left: 25px;
+}
+
+strong, h1 {
+	color: #FBD363;
+}
+
+div {
+	display: block;
+	width: 84%;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin: 17px;
+	padding: 5px;
+	border: solid;
+	border-width: 1px;
+	border-color: #D3D3D3;
+}

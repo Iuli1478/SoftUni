@@ -1,0 +1,64 @@
+
+div, p, ul, h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: white;
+    font-family: Calibri;
+}
+
+#container {
+    background-image:url("../Images/SlideBackground.jpg");
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    width: 974px;
+    height: 549px;
+
+}
+
+#container header{
+    font-size: x-large;
+    color: #ffd069;
+    margin-left: 20px;
+}
+
+#container ul {
+    color:white;
+    font-size: xx-large;
+    list-style:none;
+    margin-left: 60px;
+}
+
+#container ul li div {
+    background-color: rgba(128,128,128,0.4);
+    border:solid;
+    border-color: white;
+    border-width: 1px;
+    width: 835px;
+    margin-left: 20px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#container ul li #innerSquare01, #innerSquare03 {
+    height: 100px;
+}
+
+#container ul li #innerSquare02 {
+    height: 70px;
+}
+
+#container ul li div p {
+    font-size:x-large;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #fffed7;
+}
+
+#container ul li span {
+    color: #ffd069;
+    font-size: xx-large;
+    font-weight:bolder;
+}
