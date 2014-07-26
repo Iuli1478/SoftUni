@@ -1,19 +1,51 @@
 function Solve(input){
-    var result = "";
-    var word = input[0];
-    var text = [];
-    var move =0;
-    //раздеяме стринга word като всяка буква става индек от масив.
-    for (i = 0; i < word.length; i++) {
-        text.push(word[i]);
+    Array.prototype.move = function(from,to){
+  this.splice(to,0,this.splice(from,1)[0]);
+  return this;
+};
+    var word = "";
+    var char = "";
+    var count = 0;
+    var end = true;
+    var endCount = 0;
+    var allWords = input[0].split(" ");
+    for (var i = 0; end == true; i++) {
+        word = allWords[count];
+        if (word) {
+            char = char + word[word.length - 1]; 
+            allWords[count] = word.slice(0, word.length - 1);
+        }
+        else {
+            for (i = 0; i < allWords.length; i++) {
+                if (!allWords[i]) {
+                    endCount++;
+                }
+            }
+            if (endCount == allWords.length) {
+                end = false;
+            }
+            else {
+                endCount = 0;
+            }
+        }
+        count++;
+        if (count >= allWords.length) {
+            count = 0;
+        }
     }
-    move = 5; //с колко позиции ще местим индекса в масива
-    for (i = 0; i < text.length; i++) {
-         text.splice(move,0, text[0]); //местим move пъти първия елемент от масива
-         text.shift(text[0]); //трием първия елемент от масива
+    var letters = char.split('');
+
+    for (var i = 0; i < letters.length; i++) {
+        var numMoves;
+        numMoves = letters[i].toLowerCase().charCodeAt(0) - 96;
+        var newPosition;
+        newPosition = (numMoves + i) % letters.length;
+        var currChar = letters[i];
+        letters.splice(i, 1);
+        letters.splice(newPosition, 0, currChar);
     }
-   
-    return text.join("");
+     return letters.join('');
 }
 
-console.log(Solve(["TestStr"]));
+console.log(Solve(["Fun exam right"]));
+console.log(Solve(["maiHex"]));
